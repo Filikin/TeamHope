@@ -1,3 +1,11 @@
+/*
+Author: Eamon Kelly, Enclude
+Purpose: Leads are inserted from a web to lead. LeadSource will indicate the web page the lead is from.
+	LeadSource should match a field set that gives the mapping of the non-essential fields.
+	Lead Description will contain a JSON string with the line items for the donation
+Called from: Web to Lead
+Tested in: TestLeadFromWeb
+*/
 public with sharing class LeadFromWeb implements TriggerDispatcher.ITriggerEntry
 {
 	public void MainEntry (String TriggerObject, Boolean isBefore, Boolean isDelete, Boolean isAfter, Boolean isInsert, Boolean isUpdate, Boolean isExecuting,
